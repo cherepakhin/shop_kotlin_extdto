@@ -71,7 +71,7 @@ tasks.jar {
 publishing {
     repositories {
         maven {
-            url = uri("http://192.168.1.10:8082/repository/ru.perm.v/")
+            url = uri("http://192.168.1.20:8082/repository/ru.perm.v/")
             isAllowInsecureProtocol = true
             credentials {
                 username = System.getenv("NEXUS_CRED_USR")
