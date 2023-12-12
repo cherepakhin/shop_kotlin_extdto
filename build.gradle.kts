@@ -21,16 +21,16 @@ buildscript {
 
 plugins {
     val kotlinVersion = "1.8.21"
-    id("org.springframework.boot") version "2.5.6"
+//    id("org.springframework.boot") version "2.5.6"
     kotlin("jvm") version kotlinVersion
-    kotlin("plugin.spring") version kotlinVersion
+//    kotlin("plugin.spring") version kotlinVersion
     id("maven-publish")
-    kotlin("kapt") version "1.7.0"
+//    kotlin("kapt") version "1.7.0"
     idea
 //    id("org.sonarqube") version "3.4.0.2513"
 }
 
-apply(plugin = "kotlin-kapt")
+//apply(plugin = "kotlin-kapt")
 
 repositories {
     mavenCentral()
@@ -45,15 +45,15 @@ java.sourceSets["main"].java {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 // validator
-    implementation("org.hibernate.validator:hibernate-validator")
+//    implementation("org.hibernate.validator:hibernate-validator")
     implementation("javax.validation:validation-api:2.0.1.Final")
-
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
 //    kapt("jakarta.annotation:jakarta.annotation-api")
 
-    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+//    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 }
 
 tasks.withType<KotlinCompile> {
