@@ -20,14 +20,14 @@ buildscript {
 }
 
 plugins {
-    val kotlinVersion = "1.8.0"
+    val kotlinVersion = "1.8.21"
     id("org.springframework.boot") version "2.5.6"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.spring") version kotlinVersion
-    kotlin("plugin.jpa") version kotlinVersion
     id("maven-publish")
     kotlin("kapt") version "1.7.0"
     idea
+//    id("org.sonarqube") version "3.4.0.2513"
 }
 
 apply(plugin = "kotlin-kapt")
@@ -45,10 +45,13 @@ java.sourceSets["main"].java {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+// validator
+    implementation("org.hibernate.validator:hibernate-validator")
+    implementation("javax.validation:validation-api:2.0.1.Final")
 
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-    compileOnly("org.projectlombok:lombok:1.18.28")
+//    kapt("jakarta.annotation:jakarta.annotation-api")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 }
@@ -71,7 +74,7 @@ tasks.jar {
 publishing {
     repositories {
         maven {
-            url = uri("http://192.168.1.20:8082/repository/ru.perm.v/")
+            url = uri("http://v.perm.ru:8082/repository/ru.perm.v/")
             isAllowInsecureProtocol = true
             credentials {
                 username = System.getenv("NEXUS_CRED_USR")
@@ -85,3 +88,4 @@ publishing {
         }
     }
 }
+
