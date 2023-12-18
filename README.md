@@ -2,6 +2,8 @@
 
 Предназначена для опытов с Nexus
 
+Основной проект [https://github.com/cherepakhin/shop_kotlin](https://github.com/cherepakhin/shop_kotlin)
+
 ### Разное
 
 Получение адреса git репозитория
