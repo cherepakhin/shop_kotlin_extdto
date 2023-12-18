@@ -3,7 +3,7 @@ package ru.perm.v.shopkotlin.extdto
 import javax.validation.constraints.NotEmpty
 import javax.validation.constraints.NotNull
 
-class Address {
+class AddressExtDto {
     @field:NotNull
     var n: Long = -1
 
@@ -18,7 +18,7 @@ class Address {
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
-        if (other !is Address) return false
+        if (other !is AddressExtDto) return false
 
         if (n != other.n) return false
         if (name != other.name) return false

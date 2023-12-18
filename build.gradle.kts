@@ -49,8 +49,10 @@ dependencies {
 // validator
 //    implementation("org.hibernate.validator:hibernate-validator")
     implementation("javax.validation:validation-api:2.0.1.Final")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+// for use JUnit, not Jupiter
+//    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+//    testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
 //    kapt("jakarta.annotation:jakarta.annotation-api")
 
 //    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
