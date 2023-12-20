@@ -21,7 +21,10 @@ pipeline {
         }
 
         stage('Publish to Nexus') {
-            steps {
+           environment {
+              NEXUS_CRED = credentials('nexus_admin')
+           }
+           steps {
                 git url: 'https://github.com/cherepakhin/shop_kotlin_extdto.git', branch: 'main'
                 sh './gradlew publish'
             }
