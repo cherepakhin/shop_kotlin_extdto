@@ -6,7 +6,7 @@
 
 ### Сборка Jenkins
 
-![Сборка Jenkins](https://github.com/cherepakhin/shop_kotlin/blob/main/doc/jenkins_pipeline.png)
+![Сборка Jenkins](https://github.com/cherepakhin/shop_kotlin_extdto/blob/main/doc/jenkins_pipeline.png)
 
 ### Разное
 
