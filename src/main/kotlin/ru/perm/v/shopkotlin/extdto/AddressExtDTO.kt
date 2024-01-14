@@ -46,4 +46,8 @@ open class AddressExtDTO {
         result = 31 * result + street.hashCode()
         return result
     }
+
+    override fun toString(): String {
+        return "AddressExtDTO(n=$n, town='$town', street='$street', house='$house')"
+    }
 }
