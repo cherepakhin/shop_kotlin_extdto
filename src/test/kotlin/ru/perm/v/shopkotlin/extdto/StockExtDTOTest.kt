@@ -32,8 +32,18 @@ class StockExtDTOTest {
     @Test
     fun testNotEqualsByAddress() {
         assertNotEquals(
+            // AddressExtDTO n = 2L
             StockExtDTO(20L, "NAME_20", AddressExtDTO(2L, "NAME_1", "NAME_2", "NAME_3")),
+            // AddressExtDTO n = 1L
             StockExtDTO(20L, "NAME_20", AddressExtDTO(1L, "NAME_1", "NAME_2", "NAME_3")),
+        )
+    }
+
+    @Test
+    fun testWithDefault() {
+        assertEquals(
+            StockExtDTO(20L),
+            StockExtDTO(20L),
         )
     }
 }
