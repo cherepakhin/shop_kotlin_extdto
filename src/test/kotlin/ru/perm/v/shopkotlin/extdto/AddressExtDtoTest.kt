@@ -28,4 +28,12 @@ class AddressExtDtoTest {
         assertEquals(address2, addressDto1);
     }
 
+    @Test
+    fun testCreateWithDefaultValue() {
+        val addressDto1 = AddressEmptyExtDTO()
+        assertEquals(0L, addressDto1.n);
+        assertEquals("",addressDto1.town);
+        assertEquals("",addressDto1.street);
+        assertEquals("",addressDto1.house);
+    }
 }

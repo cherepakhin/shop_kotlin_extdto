@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull
 /**
  * Address description for external Stock
  */
-class AddressExtDTO {
+open class AddressExtDTO {
     @field:NotNull
     var n: Long = -1
 

@@ -15,5 +15,7 @@ class ErrMessages {
         const val FIELD_PRODUCT_NAME_EMPTY = "Field 'name' in ProductDTO is empty"
         const val HAVE_SUBGROUPS = "Group product with id: %s contains subgroups. Remove them first."
         const val HAVE_PRODUCTS = "Group product with id: %s contains products. Remove them to other group first."
+
+        const val FIELD_STOCK_NAME_EMPTY = "Field 'name' in StockDTO is empty"
     }
 }
