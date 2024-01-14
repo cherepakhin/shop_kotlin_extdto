@@ -41,6 +41,9 @@ java.sourceSets["main"].java {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("javax.validation:validation-api:2.0.1.Final")
+    implementation("org.hibernate.validator:hibernate-validator:6.2.0.Final")
+    implementation("org.glassfish:javax.el:3.0.1-b08")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
 }
 
