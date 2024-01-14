@@ -1,6 +1,7 @@
 package ru.perm.v.shopkotlin.extdto
 
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.Test
 
 
@@ -9,6 +10,11 @@ class AddressExtDtoTest {
     @Test
     fun testEquals() {
         assertEquals(AddressExtDTO(100L, "NAME"), AddressExtDTO(100L, "NAME"));
+    }
+
+    @Test
+    fun testNotEquals() {
+        assertNotEquals(AddressExtDTO(0L, "NAME"), AddressExtDTO(1L, "NAME1"));
     }
 
     @Test
