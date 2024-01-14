@@ -4,20 +4,20 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 
-class AddressDtoTest {
+class AddressExtDtoTest {
 
     @Test
     fun testEquals() {
-        assertEquals(AddressDto(100L, "NAME"), AddressDto(100L, "NAME"));
+        assertEquals(AddressExtDTO(100L, "NAME"), AddressExtDTO(100L, "NAME"));
     }
 
     @Test
     fun testWithSetDefaultEquals() {
-        val addressDto1 = AddressDto()
+        val addressDto1 = AddressExtDTO()
         addressDto1.n = 100L
         addressDto1.town = "TOWN_1"
 
-        val address2 = AddressDto(100L, "TOWN_1")
+        val address2 = AddressExtDTO(100L, "TOWN_1")
 
         assertEquals(address2, addressDto1);
     }

@@ -1,5 +1,8 @@
 package ru.perm.v.shopkotlin.extdto
 
+/**
+ * Library with error messages
+ */
 class ErrMessages {
     companion object {
         const val ID_NOT_FOUND = "id not found"

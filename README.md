@@ -1,8 +1,14 @@
-#### Библиотека внешних DTO для проекта shop_kotlin
-
-Предназначена для опытов с Jenkins/Nexus
+#### Библиотека внешних DTO для проекта shop_kotlin (предназначена для опытов с Jenkins/Nexus)
 
 Основной проект [https://github.com/cherepakhin/shop_kotlin](https://github.com/cherepakhin/shop_kotlin)
+
+Классы для обмена с внешними источниками данных: 
+
+AddressExtDTO - адрес
+StockExtDTO - описание внешнего склада
+StockBalanceExtDTO - остатки на внешних складах
+
+ErrMessages - сообщения об ошибках
 
 ### Сборка Jenkins
 
