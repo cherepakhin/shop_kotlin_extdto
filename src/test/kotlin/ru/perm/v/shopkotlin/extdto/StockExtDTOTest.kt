@@ -46,4 +46,13 @@ class StockExtDTOTest {
             StockExtDTO(20L),
         )
     }
+
+    @Test
+    fun testWithNotEualsId() {
+        val addr = AddressExtDTO(2L, "NAME_1", "NAME_2", "NAME_3")
+        assertNotEquals(
+            StockExtDTO(10L, "NAME", addr),
+            StockExtDTO(20L, "NAME", addr)
+        )
+    }
 }

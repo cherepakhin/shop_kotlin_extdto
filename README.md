@@ -24,3 +24,4 @@ ErrMessages - сообщения об ошибках
 https://github.com/cherepakhin/shop_kotlin_extdto.git
 
 ````
+
