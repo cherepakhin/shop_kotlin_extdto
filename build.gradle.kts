@@ -68,8 +68,8 @@ publishing {
             url = uri("http://v.perm.ru:8082/repository/ru.perm.v/")
             isAllowInsecureProtocol = true
             credentials {
-                username = System.getenv("NEXUS_CRED_USR")
-                password = System.getenv("NEXUS_CRED_PSW")
+                username = "admin"
+                password = "pass"
             }
         }
     }
