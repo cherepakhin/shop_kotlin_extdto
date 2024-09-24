@@ -65,7 +65,7 @@ tasks.jar {
 publishing {
     repositories {
         maven {
-            url = uri("http://v.perm.ru:8082/repository/ru.perm.v/")
+            url = uri("http://v.perm.ru:8081/repository/ru.perm.v/")
             isAllowInsecureProtocol = true
             credentials {
                 username = "admin"
