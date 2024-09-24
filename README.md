@@ -16,6 +16,7 @@ ErrMessages - сообщения об ошибках
 ![Сборка Jenkins](https://github.com/cherepakhin/shop_kotlin_extdto/blob/main/doc/jenkins_build.png)
 
 Итог в Nexus:
+
 ![Итог в Nexus](https://github.com/cherepakhin/shop_kotlin_extdto/blob/main/doc/nexus.png)
 
 ### Разное
